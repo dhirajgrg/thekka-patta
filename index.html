@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body class="w-full h-full bg-tertiary">
-    <!-- <header
+    <header
       class="bg-center bg-cover bg-no-repeat bg-[linear-gradient(to_top,rgba(0,0,0,0.8),transparent),url('/images/bg-header.webp')] pb-20"
     >
       <nav
@@ -55,9 +55,9 @@
           chat on whatsapp
         </button>
       </section>
-    </header> -->
+    </header>
     <!-- service section  -->
-    <!-- <section class="px-10 py-20 bg-neutral">
+    <section class="px-10 py-20 bg-neutral">
       <div class="py-6 flex flex-col gap-1">
         <span class="text-primary uppercase font-body text-sm"
           >our specialization</span
@@ -66,7 +66,7 @@
           core contracting services
         </h1>
       </div>
-      <div class="grid grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div class="card bg-neutral-200">
           <div class="img w-full h-50 bg-gray-700">
             <img src="" alt="" />
@@ -124,9 +124,9 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- operation workflow -->
-    <!-- <section class="operational px-10 py-20 bg-neutral-200">
+    <section class="operational px-10 py-20 bg-neutral-200">
       <h1
         class="font-headline text-center mb-16 uppercase font-bold tracking-widest text-2xl"
       >
@@ -142,7 +142,7 @@
             <span class="text-2xl">🤝</span>
           </div>
           <p class="font-headline uppercase text-xl font-bold">consultation</p>
-          <p class="font-body text-xs text-tertiary">
+          <p class="font-body text-sm text-tertiary">
             Initial technical assessment of your site and architectural
             requirements to define the project scope.
           </p>
@@ -156,7 +156,7 @@
             <span class="text-2xl">🔍</span>
           </div>
           <p class="font-headline uppercase text-xl font-bold">planning</p>
-          <p class="font-body text-xs text-tertiary">
+          <p class="font-body text-sm text-tertiary">
             Detailed structural mapping, material sourcing, and timeline
             scheduling with fixed deliverables.
           </p>
@@ -170,49 +170,89 @@
             <span class="text-2xl">🛠️</span>
           </div>
           <p class="font-headline uppercase text-xl font-bold">execution</p>
-          <p class="font-body text-xs text-tertiary">
+          <p class="font-body text-sm text-tertiary">
             Active site management and phase-wise construction with strict
             adherence to the master blueprint.
           </p>
         </div>
       </div>
-    </section> -->
-
-    <section class="form flex">
-      <div class="contact w-1/2">
+    </section>
+    <!-- contact -->
+    <section class="flex py-20 px-10 bg-neutral">
+      <div class="contact w-1/2 flex flex-col gap-2">
         <div>
-          <h1>ready to</h1>
-          <h1>start</h1>
-          <h1>your foundation</h1>
+          <h1 class="font-headline text-3xl font-extrabold uppercase">
+            ready to
+          </h1>
+          <h1 class="font-headline text-3xl font-extrabold uppercase">start</h1>
+          <h1 class="font-headline text-3xl font-extrabold uppercase">
+            your foundation
+          </h1>
         </div>
-        <p>
+        <p class="text-sm font-body">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
           culpa voluptas quae similique esse, omnis voluptate aliquam facilis
           doloremque error.
         </p>
-        <p class="px-6 py-2 bg-secondary w-fit text-neutral">
+        <p
+          class="px-6 py-2 bg-secondary w-fit text-neutral uppercase font-body"
+        >
           call +977999999999
         </p>
         <button
-          class="w-fit px-6 py-2 flex items-center justify-center bg-green-700 text-neutral"
+          class="w-fit px-6 py-2 flex items-center justify-center bg-green-700 text-neutral uppercase font-body"
         >
-          chat via whatsapp
+          contact via whatsapp
         </button>
       </div>
-      <div class="form w-1/2">
-        <form action="">
-          <label for="name">fullname</label>
-          <input type="text" id="name" placeholder="enter your name" />
-          <label for="phone">phone number</label>
-          <input type="text" id="phone" placeholder="+977 xxxxxxxxx" />
-          <label for="service">service type</label>
-          <select name="" id="service">
+      <div class="w-1/2 mx-auto flex justify-center">
+        <form class="flex flex-col border border-zinc-600 p-10">
+          <label class="capitalize" for="name ">fullname :</label>
+          <input
+            class="border border-zinc-600 px-2 py-1 capitalize"
+            type="text"
+            id="name"
+            placeholder="enter your name"
+          />
+          <label class="capitalize" for="phone ">phone number :</label>
+          <input
+            class="border border-zinc-600 px-2 py-1"
+            type="text"
+            id="phone"
+            placeholder="+977 xxxxxxxxx"
+          />
+          <label for="service">service type :</label>
+          <select class="border border-zinc-600 px-2 py-1" name="" id="service">
             <option value="">construct</option>
             <option value="">home finish</option>
             <option value="">plastering</option>
           </select>
+          <button
+            type="submit"
+            class="bg-black py-2 text-neutral mt-3 uppercase font-body text-sm"
+          >
+            submit request
+          </button>
         </form>
       </div>
     </section>
+
+    <!-- footer  -->
+    <footer class="py-20 bg-neutral-200">
+      <div class="flex justify-between items-center px-10">
+        <div class="font-headline font-extrabold text-3xl uppercase">
+          thekka patta
+        </div>
+        <ul class="flex items-center gap-4">
+          <li class="uppercase text-sm font-body">privacy policy</li>
+          <li class="uppercase text-sm font-body">terms of service</li>
+          <li class="uppercase text-sm font-body">whatsapp support</li>
+        </ul>
+      </div>
+      <div class="cta text-center pt-16 text-xs font-body">
+        <p>© 2026 THEKKA PATTA. PRECISION CONTRACTING. ALL RIGHT RESERVED.</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
